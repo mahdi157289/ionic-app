@@ -1,0 +1,37 @@
+<ion-tabs>
+
+  <ion-tab-bar color="primary" slot="bottom">  <!-- Creates a tab bar with a primary color at the bottom of the screen -->
+
+    <ion-tab-button tab="home">  <!-- Tab button for the "home" route -->
+      <ion-icon name="home"></ion-icon>  <!-- Home icon for the tab -->
+      <ion-label>Home</ion-label>  <!-- Text label for the tab -->
+    </ion-tab-button>
+
+    <ion-tab-button tab="charts">  <!-- Tab button for the "charts" route -->
+      <ion-icon name="pie-chart"></ion-icon>  <!-- Pie chart icon for the tab -->
+      <ion-label>Charts</ion-label>  <!-- Text label for the tab -->
+    </ion-tab-button>
+
+    <!-- Placeholder for fab button -->
+    <ion-tab-button class="ion-tab-button-placeholder">  <!-- Empty placeholder tab button for layout adjustments -->
+    </ion-tab-button>
+
+    <ion-tab-button tab="payments">  <!-- Tab button for the "payments" route -->
+      <ion-icon name="swap-horizontal"></ion-icon>  <!-- Icon for payments -->
+      <ion-label>Payments</ion-label>  <!-- Text label for the tab -->
+    </ion-tab-button>
+
+    <ion-tab-button tab="styleguide">  <!-- Tab button for the "styleguide" route -->
+      <ion-icon name="color-palette-outline"></ion-icon>  <!-- Icon for the style guide -->
+      <ion-label>Style</ion-label>  <!-- Text label for the tab -->
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+  <ion-fab class="ion-fab-custom" vertical="bottom" horizontal="center" slot="fixed" (click)="selectAction()">  <!-- Floating action button in the center bottom -->
+    <ion-fab-button color="dark">  <!-- FAB button with dark color -->
+      <ion-icon name="add"></ion-icon>  <!-- Add icon on the FAB button -->
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-tabs>
