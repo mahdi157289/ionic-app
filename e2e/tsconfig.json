@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",  // Extend the main tsconfig.json from the parent directory
+  "compilerOptions": {
+    "outDir": "../out-tsc/e2e",  // Output directory for the compiled TypeScript E2E tests
+    "module": "commonjs",  // Use CommonJS module system (required for Node.js)
+    "target": "es2018",  // Specify ECMAScript target version for compatibility (ES2018)
+    "types": [
+      "jasmine",  // Include type definitions for Jasmine (testing framework)
+      "node"  // Include type definitions for Node.js
+    ]
+  }
+}

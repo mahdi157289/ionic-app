@@ -9,6 +9,7 @@ import { Platform } from '@ionic/angular';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
+//The root component that handles platform readiness, splash screen hiding, and other initialization tasks.
 export class AppComponent {
 
   constructor(
